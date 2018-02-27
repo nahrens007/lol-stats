@@ -10,7 +10,7 @@ def index(request):
 
     summoner = getJsonSummonerByName('RedNinja2')
     if summoner:
-
+        body += '<pre>' + summoner + '</pre>'
         body += '<p>' + 'ID: ' + str(summoner['id']) + '</p>'
         body += '<p>' + 'Account ID: ' + str(summoner['accountId']) + '</p>'
         body += '<p>' + 'Name: ' + str(summoner['name']) + '</p>'
